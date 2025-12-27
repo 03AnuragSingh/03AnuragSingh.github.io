@@ -1,34 +1,300 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Anurag Singh | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anurag Singh | Data & Strategy</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text-main: #111111;
+      --text-muted: #555555;
+      --border: #e5e5e5;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    /* ---------- Header ---------- */
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+
+    .logo {
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    nav a {
+      margin-left: 24px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: var(--text-main);
+    }
+
+    /* ---------- Hero ---------- */
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      max-width: 620px;
+    }
+
+    .highlight {
+      border-bottom: 2px solid var(--text-main);
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 80px 0;
+    }
+
+    /* ---------- Section ---------- */
+
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      margin-bottom: 32px;
+    }
+
+    /* ---------- Work Grid ---------- */
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 40px;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      transition: border 0.2s ease;
+    }
+
+    .card:hover {
+      border-color: var(--text-main);
+    }
+
+    .category {
+      font-size: 0.7rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .card a {
+      font-size: 0.85rem;
+      text-decoration: underline;
+      margin-top: auto;
+      font-weight: 500;
+    }
+
+    /* ---------- About ---------- */
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 40px;
+    }
+
+    .about-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    /* ---------- Footer ---------- */
+
+    footer {
+      margin-top: 120px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      text-decoration: underline;
+      margin: 0 6px;
+    }
+
+    /* ---------- Mobile ---------- */
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .about {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <div class="container">
 
-  <nav>
-  <a href="index.html">Home</a> |
-  <a href="projects.html">Projects</a> |
-  <a href="case-studies.html">Case Studies</a> |
-  <a href="blogs.html">Blogs</a> |
-  <a href="contact.html">Contact</a>
-</nav>
-  
-  <h1>Anurag Singh</h1>
+    <!-- Header -->
+    <header>
+      <div class="logo">ANURAG SINGH</div>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="mailto:your.email@example.com">Contact</a>
+      </nav>
+    </header>
 
-  <h3>
-    Consultant-in-training | Data Analytics | ML & AI
-  </h3>
+    <!-- Hero -->
+    <section class="hero">
+      <h1>Data & Strategy Consultant</h1>
+      <p>
+        I work at the intersection of <span class="highlight">analytics</span>,
+        <span class="highlight">machine learning</span>, and
+        <span class="highlight">business strategy</span> to help organizations
+        make better decisions.
+      </p>
+    </section>
 
-  <p>
-    MBA candidate at Great Lakes Institute of Management with prior experience at Infosys,
-    working at the intersection of business problem-solving, data analytics, and machine learning.
-  </p>
+    <div class="divider"></div>
 
-  <p>
-    This website showcases my Power BI dashboards, ML/AI projects, consulting case studies,
-    and thought pieces on data-driven decision-making.
-  </p>
+    <!-- Work -->
+    <section id="work">
+      <h2>Selected Work</h2>
 
+      <div class="grid">
+
+        <div class="card">
+          <div class="category">GenAI & Automation</div>
+          <h3>Sales Intelligence Engine</h3>
+          <p>
+            Reduced manual research effort by ~75% by using LLMs to
+            synthesize company and CXO-level insights for consulting teams.
+          </p>
+          <a href="#">Read case study</a>
+        </div>
+
+        <div class="card">
+          <div class="category">Power BI</div>
+          <h3>Supply Chain Performance Dashboard</h3>
+          <p>
+            Executive dashboard tracking inventory efficiency,
+            delivery timelines, and regional bottlenecks.
+          </p>
+          <a href="#">View dashboard</a>
+        </div>
+
+        <div class="card">
+          <div class="category">Machine Learning</div>
+          <h3>Predictive Maintenance Model</h3>
+          <p>
+            Random Forest model to anticipate mechanical failures
+            and reduce downtime in manufacturing systems.
+          </p>
+          <a href="#">View project</a>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="about-label">About</div>
+      <div>
+        <p style="margin-bottom: 20px;">
+          I am an MBA candidate at Great Lakes Institute of Management with
+          prior experience at Infosys, spanning consulting research,
+          enterprise systems, and analytics.
+        </p>
+        <p style="margin-bottom: 20px;">
+          My background allows me to approach problems with both
+          structured business thinking and technical depth.
+          I focus on clarity, impact, and decision usefulness.
+        </p>
+        <p>
+          <a href="#">Download résumé</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        © Anurag Singh ·
+        <a href="https://github.com/03AnuragSingh">GitHub</a> ·
+        <a href="https://linkedin.com">LinkedIn</a>
+      </p>
+    </footer>
+
+  </div>
 </body>
 </html>
