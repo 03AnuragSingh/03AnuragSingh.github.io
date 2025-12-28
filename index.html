@@ -52,9 +52,9 @@
       margin-bottom: 80px;
     }
 
-    .logo {
-      font-weight: 600;
-      letter-spacing: 0.5px;
+    .logo img {
+      height: 28px;
+      width: auto;
     }
 
     nav a {
@@ -69,11 +69,13 @@
     }
 
     /* ---------- Hero ---------- */
-    <img 
-      src="logo-full.png" 
-      alt="Anurag Singh Full Logo" 
-      class="hero-logo">
-    
+
+    .hero-logo {
+      max-width: 300px;
+      width: 100%;
+      margin-bottom: 32px;
+    }
+
     .hero h1 {
       font-family: 'Playfair Display', serif;
       font-size: 3rem;
@@ -183,8 +185,6 @@
       margin: 0 6px;
     }
 
-    /* ---------- Mobile ---------- */
-
     @media (max-width: 768px) {
       header {
         flex-direction: column;
@@ -209,7 +209,7 @@
     <!-- Header -->
     <header>
       <div class="logo">
-        <img src="logo-symbol.png" alt="Anurag Singh Logo">
+        <img src="logo-mark.png" alt="Anurag Singh logo">
       </div>
       <nav>
         <a href="#work">Work</a>
@@ -220,7 +220,14 @@
 
     <!-- Hero -->
     <section class="hero">
+      <img
+        src="logo-hero.png"
+        alt="Anurag Singh — Data & Analytics Consultant"
+        class="hero-logo"
+      >
+
       <h1>Data & Strategy Consultant</h1>
+
       <p>
         I work at the intersection of <span class="highlight">analytics</span>,
         <span class="highlight">machine learning</span>, and
@@ -234,39 +241,13 @@
     <!-- Work -->
     <section id="work">
       <h2>Selected Work</h2>
-
       <div class="grid">
-
         <div class="card">
           <div class="category">GenAI & Automation</div>
           <h3>Sales Intelligence Engine</h3>
-          <p>
-            Reduced manual research effort by ~75% by using LLMs to
-            synthesize company and CXO-level insights for consulting teams.
-          </p>
+          <p>Reduced manual research effort by ~75% using LLMs.</p>
           <a href="#">Read case study</a>
         </div>
-
-        <div class="card">
-          <div class="category">Power BI</div>
-          <h3>Supply Chain Performance Dashboard</h3>
-          <p>
-            Executive dashboard tracking inventory efficiency,
-            delivery timelines, and regional bottlenecks.
-          </p>
-          <a href="#">View dashboard</a>
-        </div>
-
-        <div class="card">
-          <div class="category">Machine Learning</div>
-          <h3>Predictive Maintenance Model</h3>
-          <p>
-            Random Forest model to anticipate mechanical failures
-            and reduce downtime in manufacturing systems.
-          </p>
-          <a href="#">View project</a>
-        </div>
-
       </div>
     </section>
 
@@ -276,29 +257,13 @@
     <section id="about" class="about">
       <div class="about-label">About</div>
       <div>
-        <p style="margin-bottom: 20px;">
-          I am an MBA candidate at Great Lakes Institute of Management with
-          prior experience at Infosys, spanning consulting research,
-          enterprise systems, and analytics.
-        </p>
-        <p style="margin-bottom: 20px;">
-          My background allows me to approach problems with both
-          structured business thinking and technical depth.
-          I focus on clarity, impact, and decision usefulness.
-        </p>
-        <p>
-          <a href="#">Download résumé</a>
-        </p>
+        <p>I am an MBA candidate at Great Lakes Institute of Management.</p>
+        <p><a href="#">Download résumé</a></p>
       </div>
     </section>
 
-    <!-- Footer -->
     <footer>
-      <p>
-        © Anurag Singh ·
-        <a href="https://github.com/03AnuragSingh">GitHub</a> ·
-        <a href="https://linkedin.com">LinkedIn</a>
-      </p>
+      <p>© Anurag Singh · <a href="#">GitHub</a> · <a href="#">LinkedIn</a></p>
     </footer>
 
   </div>
