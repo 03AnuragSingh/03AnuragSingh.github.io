@@ -25,11 +25,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 48px;
 }
 
 .logo img {
-  height: 28px;
+  height: 36px;
   width: auto;
 }
 
@@ -48,16 +48,16 @@ nav a {
 
 .hero-logo {
   display: block;
-  height: 80px;          /* reduced — this is the sweet spot */
+  height: 72px;          /* reduced — this is the sweet spot */
   width: auto;
   margin-bottom: 28px;
 }
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   line-height: 1.2;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .hero p {
