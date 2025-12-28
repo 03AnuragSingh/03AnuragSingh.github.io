@@ -1,48 +1,31 @@
+/* ---------- Base ---------- */
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   max-width: 900px;
   margin: 40px auto;
   padding: 0 20px;
-  line-height: 1.6;
+  line-height: 1.7;
   color: #222;
+  background: #fff;
 }
 
-nav {
-  margin-bottom: 40px;
-}
-
-nav a {
+a {
+  color: inherit;
   text-decoration: none;
-  color: #333;
-  margin-right: 15px;
-  font-weight: 500;
 }
 
-nav a:hover {
+a:hover {
   text-decoration: underline;
 }
+
+/* ---------- Header ---------- */
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 60px;
-}
-
-h1 {
-  font-size: 2.2rem;
-  margin-bottom: 5px;
-}
-
-h3 {
-  font-weight: 400;
-  color: #555;
-  margin-top: 0;
-}
-
-p {
-  font-size: 1rem;
-  margin-bottom: 16px;
+  margin-bottom: 80px;
 }
 
 .logo img {
@@ -50,15 +33,149 @@ p {
   width: auto;
 }
 
-.hero-logo {
-  display: block;
-  height: 120px;
-  width: auto;
-  margin: 0 auto 20px;
+nav a {
+  margin-left: 24px;
+  font-size: 0.9rem;
+  color: #555;
 }
+
+/* ---------- Hero ---------- */
 
 .hero {
   padding-top: 20px;
   padding-bottom: 40px;
 }
 
+.hero-logo {
+  display: block;
+  height: 80px;          /* reduced — this is the sweet spot */
+  width: auto;
+  margin-bottom: 28px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 620px;
+}
+
+.highlight {
+  border-bottom: 2px solid #222;
+}
+
+/* ---------- Dividers ---------- */
+
+.divider {
+  height: 1px;
+  background: #e5e5e5;
+  margin: 80px 0;
+}
+
+/* ---------- Sections ---------- */
+
+section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  margin-bottom: 32px;
+}
+
+/* ---------- Work Grid ---------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+.card {
+  border: 1px solid #e5e5e5;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  transition: border 0.2s ease;
+}
+
+.card:hover {
+  border-color: #222;
+}
+
+.category {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #777;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.card a {
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-top: auto;
+}
+
+/* ---------- About ---------- */
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+.about-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #777;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  margin-top: 120px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+footer a {
+  margin: 0 6px;
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
