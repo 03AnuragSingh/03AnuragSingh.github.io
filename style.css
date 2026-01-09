@@ -48,9 +48,9 @@ nav a {
 
 .hero-logo {
   display: block;
-  height: 36px;          /* reduced — this is the sweet spot */
+  height: 56px;      /* wordmark-sized, NOT banner */
   width: auto;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 .hero h1 {
