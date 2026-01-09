@@ -29,7 +29,7 @@ header {
 }
 
 .logo img {
-  height: 72px;
+  height: 36px;
   width: auto;
 }
 
@@ -48,7 +48,7 @@ nav a {
 
 .hero-logo {
   display: block;
-  height: 72px;          /* reduced — this is the sweet spot */
+  height: 36px;          /* reduced — this is the sweet spot */
   width: auto;
   margin-bottom: 28px;
 }
