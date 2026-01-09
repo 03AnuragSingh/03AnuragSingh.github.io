@@ -29,8 +29,11 @@ header {
 }
 
 .logo img {
-  height: 36px;
+  display: block;
+  height: 56px;
   width: auto;
+  margin-bottom: 2px;   /* subtle optical alignment */
+  filter: contrast(1.05);
 }
 
 nav a {
@@ -44,13 +47,6 @@ nav a {
 .hero {
   padding-top: 20px;
   padding-bottom: 40px;
-}
-
-.hero-logo {
-  display: block;
-  height: 56px;      /* wordmark-sized, NOT banner */
-  width: auto;
-  margin-bottom: 24px;
 }
 
 .hero h1 {
